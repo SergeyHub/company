@@ -2,7 +2,7 @@
 1. Install docker and docker-compose.
 2. Clone repository
 ```
-git clone git@github.com:dgaponov/zhigalo.git
+git clone github.com/SergeyHub/company.git
 cd zhigalo
 ```
 
@@ -12,7 +12,7 @@ cp .env.example .env
 ```
 4. Add test domain to hosts
 ```
-echo "gigalo.test 127.0.0.1" >> /etc/hosts
+echo "company.test 127.0.0.1" >> /etc/hosts
 ```
 5. Build docker services.
 ```
