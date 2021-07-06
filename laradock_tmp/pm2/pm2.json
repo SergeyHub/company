@@ -1,0 +1,25 @@
+{
+  "apps" : [{
+    "name"        : "nuxt",
+    "script"      : "/app/node_modules/nuxt/bin/nuxt.js",
+    "args" : "start -c /app/prod.config.js",
+    "cwd" : "/app/current/",
+    "watch": false,
+    "exec_mode": "cluster",
+    "instances": "max",
+    "env": {
+      "NODE_ENV": "development",
+      "HOST": "0.0.0.0",
+      "PORT": "3333",
+      "base_domain": "dev.mybestgigolo.com",
+      "production": "true"
+    },
+    "env_production" : {
+      "NODE_ENV": "production",
+      "HOST": "0.0.0.0",
+      "PORT": "3333",
+      "base_domain": "dev.mybestgigolo.com",
+      "production": "true"
+    }
+  }]
+}

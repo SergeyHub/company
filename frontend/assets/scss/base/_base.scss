@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html {
+    @include xs-block() {
+        height: 100%;
+    }
+
+    &.is-fixed {
+        overflow: hidden;
+
+        body,
+        .page__wrapper,
+        .page__content {
+            overflow: hidden;
+        }
+    }
+
+    &.no-touch-events {
+        .wrapper,
+        .wrapper__inner {
+            pointer-events: none;
+            touch-action: none;
+        }
+    }
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: $f !important;
+}
+body {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: $bg-color;
+    color: $color-text--white;
+    font-family: $f !important;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+    line-height: $base-line-height;
+    scroll-behavior: smooth;
+    @include smooth-font;
+    @include smooth-scroll;
+
+    &.is-fixed,
+    &.fancybox-enabled {
+        overflow: hidden;
+    } //body.is-fixed || .fancybox-enabled
+} //body
+
+img {
+    @extend %img;
+}
+
+iframe {
+    border: 0;
+}
+
+select {
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+
+    option {
+        &[disabled] {
+            color: $gray--light;
+        }
+    }
+}
+
+label {
+    input[type='file'] {
+        display: none;
+    }
+}
+
+.main {
+    flex: 1;
+} //.main
+
+.container {
+    @include container;
+
+    @include xs-block() {
+        &.xs-no-offset {
+            padding: 0;
+        }
+    }
+} //.container
+
+[class$='--column'] {
+    align-items: flex-start;
+    @include flexColumn;
+}

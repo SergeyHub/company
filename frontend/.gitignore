@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+node_modules_
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+releases
+
+current
+
+version.json
+./version.json

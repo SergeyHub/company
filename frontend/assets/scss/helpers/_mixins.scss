@@ -1,0 +1,293 @@
+//border-radius
+@mixin br($radius) {
+    border-radius: $radius;
+}
+
+//transform rotate
+@mixin rotate($var) {
+    transform: rotate($var + deg);
+}
+
+//transform scale
+@mixin scale($var) {
+    transform: scale($var);
+}
+
+@mixin blur($var) {
+    filter: blur($var);
+}
+
+@mixin smooth-scroll {
+    -webkit-overflow-scrolling: touch;
+}
+
+@mixin smooth-font {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin gpu {
+    transform: translate3d(0, 0, 0);
+}
+
+//gradient
+@mixin gp($position, $color1, $color2) {
+    background-image: linear-gradient($position, $color1, $color2);
+}
+
+@mixin cover {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+@mixin bgFixed {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+@mixin coverdiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+//transform: translateY
+@mixin tY($var) {
+    transform: translateY($var);
+}
+
+//transform: translateX
+@mixin tX($var) {
+    transform: translateX($var);
+}
+
+//transition
+@mixin tr($time: 0.35s, $what: all, $why: ease) {
+    -webkit-transition: $what $time $why;
+    -moz-transition: $what $time $why;
+    -ms-transition: $what $time $why;
+    -o-transition: $what $time $why;
+    transition: $what $time $why;
+}
+
+//text-overflow
+@mixin text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//Counter
+@mixin counter($var) {
+    counter-reset: $var;
+
+    & > li,
+    & > dt {
+        &::before {
+            content: counter($var);
+            counter-increment: $var;
+        }
+    }
+}
+
+@mixin placeholder {
+    &:-ms-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &::placeholder {
+        @content;
+    }
+}
+
+//No select
+@mixin unselectable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+@mixin nosel {
+    @include unselectable;
+}
+
+//Scroll
+@mixin scroll($axis: 'y') {
+    -webkit-overflow-scrolling: touch;
+    @if $axis == 'y' {
+        overflow-y: auto;
+    }
+    @if $axis == 'x' {
+        overflow-x: auto;
+    }
+}
+
+//Scroll Bar
+@mixin scrollbar {
+    &::-webkit-scrollbar {
+        @content;
+    }
+}
+@mixin scrollbar-track {
+    &::-webkit-scrollbar-track {
+        @content;
+    }
+}
+@mixin scrollbar-thumb {
+    &::-webkit-scrollbar-thumb {
+        @content;
+    }
+}
+@mixin scrollbar-track-piece {
+    &::-webkit-scrollbar-track-piece {
+        @content;
+    }
+}
+
+//Clearfix
+@mixin clr {
+    &::after {
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+}
+
+//Triangel
+@mixin arr($width, $height, $bg, $direction) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    @if $direction == t {
+        border-width: 0 $width / 2 + px $height + px $width / 2 + px;
+        border-color: transparent transparent $bg transparent;
+    }
+    @if $direction == r {
+        border-width: $height / 2 + px 0 $height / 2 + px $width + px;
+        border-color: transparent transparent transparent $bg;
+    }
+    @if $direction == b {
+        border-width: $height + px $width / 2 + px 0 $width / 2 + px;
+        border-color: $bg transparent transparent transparent;
+    }
+    @if $direction == l {
+        border-width: $height / 2 + px $width + px $height / 2 + px 0;
+        border-color: transparent $bg transparent transparent;
+    }
+    @if $direction == tl {
+        border-width: $height + px $width + px 0 0;
+        border-color: $bg transparent transparent transparent;
+    }
+    @if $direction == tr {
+        border-width: 0 $width + px $height + px 0;
+        border-color: transparent $bg transparent transparent;
+    }
+    @if $direction == br {
+        border-width: 0 0 $height + px $width + px;
+        border-color: transparent transparent $bg transparent;
+    }
+    @if $direction == bl {
+        border-width: $width + px 0 0 $height + px;
+        border-color: transparent transparent transparent $bg;
+    }
+}
+
+//Icon angle svg base64
+@mixin iconAngle($right: 10px, $direction: bottom) {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: $right;
+        z-index: z(fixed) - 2;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMjM4LjAwMyAyMzguMDAzIiA+PHBhdGggc3R5bGU9ImZpbGw6I2E1YTVhNTsiIGQ9Ik0xODEuNzc2LDEwNy43MTlMNzguNzA1LDQuNjQ4Yy02LjE5OC02LjE5OC0xNi4yNzMtNi4xOTgtMjIuNDcsMHMtNi4xOTgsMTYuMjczLDAsMjIuNDdsOTEuODgzLDkxLjg4M2wtOTEuODgzLDkxLjg4M2MtNi4xOTgsNi4xOTgtNi4xOTgsMTYuMjczLDAsMjIuNDdzMTYuMjczLDYuMTk4LDIyLjQ3LDBsMTAzLjA3MS0xMDMuMDM5YzMuMTQ2LTMuMTQ2LDQuNjcyLTcuMjQ2LDQuNjQtMTEuMjgzQzE4Ni40MTYsMTE0LjkwMiwxODQuODksMTEwLjgzMywxODEuNzc2LDEwNy43MTl6Ii8+PC9zdmc+');
+        fill: $color-icon;
+        // color: $color-icon;
+        // font-size: 18px;
+        // @include fa('light');
+
+        @if $direction == bottom {
+            transform: translateY(-50%) rotate(90deg);
+        }
+
+        @if $direction == right {
+            transform: translateY(-50%);
+        }
+    }
+}
+
+// font-family
+@mixin font($alias, $family, $name) {
+    @font-face {
+        font-family: $alias;
+        font-style: normal;
+        font-weight: normal;
+        src: url('/fonts/'+$family+'/'+$name+'.eot') format('eot'),
+            url('/fonts/'+$family+'/'+$name+'.ttf') format('ttf'),
+            // url('//fonts/' + $family + '/' + $name + '.woff2') format('woff2'),
+                url('/fonts/'+$family+'/'+$name+'.woff') format('woff');
+        font-display: swap;
+    }
+}
+
+@mixin centre($axis: 'both') {
+    position: absolute;
+    @if $axis == 'y' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @if $axis == 'x' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $axis == 'both' {
+        top: 50%;
+        left: 50%;
+        transform: translate(-51%, -50%);
+    }
+}
+
+//Font Awesome
+@mixin fa($family: 'regular') {
+    @if $family == 'light' {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+    }
+    @if $family == 'regular' {
+        font-family: 'Font Awesome 5 Pro';
+    }
+    @if $family == 'solid' {
+        font-family: 'Font Awesome 5 Pro';
+        font-style: normal;
+        font-weight: 900;
+    }
+    @if $family == 'brand' {
+        font-family: 'Font Awesome 5 Brands';
+        font-weight: 300;
+    }
+}

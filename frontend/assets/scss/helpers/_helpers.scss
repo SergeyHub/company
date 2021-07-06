@@ -1,0 +1,253 @@
+@mixin customScroll {
+    @include scrollbar {
+        width: 4px;
+    }
+    @include scrollbar-track {
+        width: 4px;
+    }
+    @include scrollbar-thumb {
+        background-color: $gray--lighten;
+    }
+}
+
+@mixin container {
+    width: 100%;
+    max-width: 1110px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond-to(mdX) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    &--lg {
+        max-width: 1280px;
+    }
+
+    &--md {
+        max-width: 1024px;
+    }
+
+    &--sm {
+        max-width: 768px;
+    }
+
+    &--xs {
+        max-width: 480px;
+    }
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flexColumnCentered {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+@mixin dropdownResponseWidth {
+    @include respond-to(xs) {
+        width: 427px;
+        max-width: 427px;
+    }
+    @include respond-to(i8) {
+        width: 416px;
+    }
+    @include respond-to(i7) {
+        width: 377px;
+    }
+    @include respond-to(i5) {
+        width: 322px;
+    }
+}
+
+@mixin responseWidth {
+    @include respond-to(xs) {
+        width: calc(425px - 20px);
+        max-width: 425px;
+    }
+    @include respond-to(i8) {
+        width: calc(414px - 20px);
+    }
+    @include respond-to(i7) {
+        width: calc(375px - 20px);
+    }
+    @include respond-to(i5) {
+        width: calc(320px - 20px);
+    }
+}
+
+@mixin sectionOverlay($opa: 0.7) {
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        background-color: rgba($color-bg, $opa);
+        @include tr;
+        @include coverdiv;
+    }
+
+    & > * {
+        z-index: z(default);
+    }
+
+    .container {
+        position: relative;
+    }
+}
+
+@mixin border($direction, $color: $color-border) {
+    @if $direction == 'top' {
+        border-top: 1px solid $color;
+    }
+    @if $direction == 'left' {
+        border-left: 1px solid $color;
+    }
+    @if $direction == 'right' {
+        border-right: 1px solid $color;
+    }
+    @if $direction == 'bottom' {
+        border-bottom: 1px solid $color;
+    }
+    @if $direction == 'all' {
+        border: 1px solid $color;
+    }
+}
+
+@mixin listIcon($positionTop: 12px, $color: $color-main) {
+    position: relative;
+    padding-left: 15px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: $positionTop;
+        left: 0;
+        display: block;
+        width: 8px;
+        height: 2px;
+        background-color: $color;
+    }
+} //ul li &::before (-)
+
+@mixin checkIcon(
+    $color: #fff,
+    $width: 6px,
+    $height: 11px,
+    $top: 0,
+    $left: 4px
+) {
+    content: '';
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    transform: rotate(45deg);
+    border: solid $color;
+    border-width: 0 2px 2px 0;
+}
+
+@mixin itemOffset($offset: 10px) {
+    & > :not(:first-child) {
+        margin-left: $offset;
+
+        @include xs-block() {
+            margin-top: $offset;
+            margin-left: 0;
+        }
+    }
+
+    & > :not(:last-child) {
+        margin-right: $offset;
+
+        @include xs-block() {
+            margin-right: 0;
+        }
+    }
+}
+
+%img {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+}
+
+%box {
+    border-radius: $border-radius;
+    background-color: #fff;
+    // border: 1px solid $color-border--lightest;
+    // box-shadow: 0 2px 5px 0 rgba(164, 173, 186, .25);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+%badge {
+    justify-content: center;
+    min-width: 20px;
+    height: 19px;
+    padding: 3px 5px;
+    overflow: hidden;
+    border-radius: 500px;
+    background-color: $color-main;
+    color: #fff;
+    font-family: $f;
+    font-size: 9px;
+    text-align: center;
+    @include flexCenter;
+}
+
+%styleInput {
+    height: 40px;
+    padding: 9px 25px 9px 10px;
+    transform: translateZ(0);
+    transition: border 0.3s ease;
+    border: 1px solid $input-color-border;
+    border-radius: $border-radius;
+    background-color: #fff;
+    color: $gray--darkest;
+    font-size: 16px;
+    line-height: 1;
+    // -webkit-text-fill-color: $gray--darkest;
+
+    @include placeholder {
+        color: $gray--light;
+        font-family: $f;
+        font-size: 14px;
+        line-height: 23px;
+
+        @include respond-to(xs) {
+            font-size: 16px;
+        }
+    }
+
+    &:hover {
+        border-color: $input-color-border--hover;
+    }
+
+    &:focus {
+        border-color: darken($input-color-border--hover, 10%);
+        font-size: 16px;
+        // box-shadow: $input-shadow--hover;
+    }
+
+    &:disabled {
+        color: $gray !important;
+        //background-color: $gray--lighten !important;
+    }
+}

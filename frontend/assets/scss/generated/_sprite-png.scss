@@ -1,0 +1,116 @@
+$icons: (0:0);
+$icons: map-merge($icons,(angle--left: (X: -522px, Y:-64px, W: 32px, H: 32px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(angle--right: (X: -522px, Y:-106px, W: 32px, H: 32px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(camera: (X: -522px, Y:0px, W: 64px, H: 54px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(iInstagram--sm: (X: -522px, Y:-148px, W: 32px, H: 32px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(instagram--xs: (X: -564px, Y:-64px, W: 21px, H: 21px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(instagram: (X: 0px, Y:0px, W: 512px, H: 512px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(rating--gray: (X: -282px, Y:-522px, W: 74px, H: 13px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(rating: (X: -366px, Y:-522px, W: 74px, H: 13px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(rating_big--gray: (X: 0px, Y:-522px, W: 131px, H: 22px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+$icons: map-merge($icons,(rating_big: (X: -141px, Y:-522px, W: 131px, H: 22px, TW: 586px, TH: 544px, IMG: '//icons.png')));
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr){
+	$icon: map-get($icons, $icon);
+	@return map-get($icon, $attr);
+}
+
+
+@mixin sprite($iconName){
+	background-image: url(icon-attr($iconName, IMG));
+	width: icon-attr($iconName, W);
+	height: icon-attr($iconName, H);
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y);
+}
+
+@mixin sprite-position($iconName){
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y);
+}
+@mixin sprite-retina($iconName){
+	background-image: url(icon-attr($iconName, IMG));
+	$width: icon-attr($iconName, W);
+	$height: icon-attr($iconName, H);
+	width: $width/2;
+	height: $height/2;
+	$x: icon-attr($iconName, X);
+	$y: icon-attr($iconName, Y);
+	background-position: $x/2 $y/2;
+	$tw: icon-attr($iconName, TW);
+	$th: icon-attr($iconName, TH);
+	background-size: $tw/2 $th/2;
+}
+
+
+
+@mixin s($i){
+	@include sprite($i);
+}
+@mixin sp($i){
+	@include sprite-position($i);
+}
+@mixin sr($i){
+	@include sprite-retina($i);
+}
+
+.ico-angle--left{
+width: 32px;
+height: 32px;
+background-image: url('//icons.png');
+background-position: -522px -64px;
+}
+.ico-angle--right{
+width: 32px;
+height: 32px;
+background-image: url('//icons.png');
+background-position: -522px -106px;
+}
+.ico-camera{
+width: 64px;
+height: 54px;
+background-image: url('//icons.png');
+background-position: -522px 0px;
+}
+.ico-iInstagram--sm{
+width: 32px;
+height: 32px;
+background-image: url('//icons.png');
+background-position: -522px -148px;
+}
+.ico-instagram--xs{
+width: 21px;
+height: 21px;
+background-image: url('//icons.png');
+background-position: -564px -64px;
+}
+.ico-instagram{
+width: 512px;
+height: 512px;
+background-image: url('//icons.png');
+background-position: 0px 0px;
+}
+.ico-rating--gray{
+width: 74px;
+height: 13px;
+background-image: url('//icons.png');
+background-position: -282px -522px;
+}
+.ico-rating{
+width: 74px;
+height: 13px;
+background-image: url('//icons.png');
+background-position: -366px -522px;
+}
+.ico-rating_big--gray{
+width: 131px;
+height: 22px;
+background-image: url('//icons.png');
+background-position: 0px -522px;
+}
+.ico-rating_big{
+width: 131px;
+height: 22px;
+background-image: url('//icons.png');
+background-position: -141px -522px;
+}

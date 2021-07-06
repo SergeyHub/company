@@ -1,0 +1,27 @@
+.breadcrumbs {
+    margin: 20px 0;
+    color: #999;
+    font-size: 12px;
+
+    .single-product & {
+        @include xs-block() {
+            display: none;
+        }
+    }
+
+    a {
+        color: #999;
+        font-weight: normal;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+    .breadcrumb_last {
+        color: #000;
+    }
+
+    a:hover {
+        transition: all 0.3s ease;
+        color: #000;
+    }
+} // .breadcrumbs

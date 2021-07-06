@@ -1,0 +1,42 @@
+.rating {
+    position: relative;
+    text-align: center;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+
+        span {
+            margin-right: 15px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+            line-height: 16px;
+
+            @include i5-block() {
+                font-size: 12px;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li {
+            width: 20px;
+            height: 16px;
+            padding-left: 4px;
+            background-image: url('/files/icons/svg/icon--stars-gray.svg');
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: 16px 16px;
+            cursor: pointer;
+
+            &.on {
+                background-image: url('/files/icons/svg/icon--stars.svg');
+            }
+        }
+    }
+} //.rating

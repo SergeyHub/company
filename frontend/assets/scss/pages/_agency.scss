@@ -1,0 +1,139 @@
+.agency {
+    padding: 50px 0;
+    background-color: #1a1a1a;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+
+        @include xs-block() {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    &__thumb {
+        width: 238px;
+        height: 238px;
+
+        @include xs-block() {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__meta {
+        width: 490px;
+        padding-left: 30px;
+
+        @include xs-block() {
+            width: 100%;
+            padding-left: 0px;
+        }
+
+        &-title {
+            margin-bottom: 15px;
+            color: #fff;
+            font-family: $f-bold;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &-count {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 5px 10px;
+            border: 1px solid $color-accent;
+            color: $color-accent;
+        }
+
+        &-desc {
+            margin-bottom: 15px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        &-url {
+            color: $color-accent;
+        }
+
+        &-contact {
+            margin-top: 30px;
+
+            &-phone {
+                &-number {
+                    color: $color-text--white;
+                    font-size: 24px;
+                    line-height: 150%;
+                }
+
+                &-type {
+                    color: rgba(255, 255, 255, 0.5);
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+
+                span {
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
+    }
+
+    &__data {
+        position: relative;
+
+        &-item {
+            margin-left: 20px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+
+            @include xs-block() {
+                margin: 15px 25px;
+            }
+
+            &:first-child {
+                margin-left: 0px;
+
+                @include xs-block() {
+                    margin: 15px 25px;
+                }
+            }
+
+            span {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-icon {
+            margin-right: 7px;
+        }
+
+        &-text {
+            font-family: $f-bold;
+        }
+
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            @include xs-block() {
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

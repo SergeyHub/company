@@ -1,0 +1,46 @@
+@import 'helpers/all';
+@import 'generated/all';
+@import 'base/all';
+
+//Libs
+// @import '../../node_modules/animate.css/animate.min';
+@import '../../node_modules/swiper/swiper-bundle.min';
+//@import '../../node_modules/flatpickr/dist/flatpickr.min';
+@import '../../node_modules/flatpickr/dist/themes/dark';
+//@import '../../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar';
+@import '_lib/_jquery.fancybox';
+
+//Customization libs
+@import 'custom';
+
+//Import site components
+// @import 'components/breadcrumbs';
+@import 'components/buttons';
+@import 'components/alert';
+
+//Import main styles
+@import 'main';
+
+//Import site layouts
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/filter';
+@import 'layout/rating';
+@import 'layout/search';
+@import 'layout/reviews';
+@import 'layout/view';
+@import 'layout/nav';
+@import 'layout/auth';
+@import 'layout/popup';
+@import 'layout/sidebar';
+@import 'layout/country';
+@import 'layout/attention';
+
+//Import pages
+@import 'pages/admin';
+@import 'pages/archive';
+@import 'pages/page';
+@import 'pages/profile';
+@import 'pages/agency';
+@import 'pages/cabinet';
+@import 'pages/premium';

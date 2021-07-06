@@ -1,0 +1,25 @@
+.sidebar {
+    position: relative;
+
+    .banners {
+        @include md-block() {
+            display: flex;
+        }
+
+        @include sm-block() {
+            display: none;
+        }
+
+        &__item {
+            display: block;
+            flex-wrap: wrap;
+
+            & + .banners__item {
+                margin-top: 10px;
+                @include md-block() {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+} // .sidebar

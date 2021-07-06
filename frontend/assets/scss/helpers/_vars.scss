@@ -1,0 +1,186 @@
+//FONT
+$f: MuseoSansCyrl-300, sans-serif;
+$f-light: MuseoSansCyrl-100, sans-serif;
+$f-medium: MuseoSansCyrl-500, sans-serif;
+$f-bold: MuseoSansCyrl-700, sans-serif;
+$f-extrabold: MuseoSansCyrl-900, sans-serif;
+// $f-extrabold: MuseoSansCyrl-900, sans-serif;
+
+$base-font-size: 16px;
+$base-font-family: $f;
+$base-line-height: 1.5;
+$base-font-weight: normal;
+
+//OFFSETS
+$base-indent: 20px;
+$base-indent--half: $base-indent / 2;
+$base-section-indent: 50px;
+
+$gutter: $base-indent;
+
+//BASE VARS
+$color-accent: #ffbc3f;
+$color-main: #f3b63e;
+
+$color-muted: #d6d6d6;
+$color-primary: #ff8272;
+$color-primary--light: #ff9280;
+$color-success: #8cc152;
+$color-success--light: #79cebb;
+$color-info: #5c87de;
+$color-info--light: #3263a6;
+$color-danger: #f33155;
+$color-danger--light: #f67c93;
+$color-warning: #ffc107;
+
+//GRAY COLORS
+$gray--darkest: #181818;
+$gray--darken: #272727;
+$gray--dark: #464646;
+$gray--slate: #6b7c88;
+$gray: #585a59;
+$gray--light: #bbb;
+$gray--lighten: #e0e0e0;
+$gray--lightest: #dee3e7;
+
+//TEXT COLORS
+$color-text--darkest: $gray--darkest;
+$color-text: #000;
+$color-text--white: #fff;
+$color-text--light: #84a8d9;
+$color-text--lighten: $gray--lighten;
+$color-text--lightest: $gray--lightest;
+
+//BTN COLORS
+$btn-color--darken: #3e3737;
+$btn-color--dark: #6b6464;
+
+//BG COLORS
+$color-bg--darkest: $gray--darkest;
+$color-bg--darken: $gray--darken;
+$color-bg--dark: #222;
+$color-bg: #2f2f2f;
+$color-bg--light: #eee;
+$color-bg--lighten: #f5f5f5;
+$color-bg--lightest: #f7f7f8;
+$color-bg--instagram: linear-gradient(
+    to bottom left,
+    #962fbf 0%,
+    #d62976 35%,
+    #fa7e1e 70%,
+    #ffdc3e 100%
+);
+
+//Icon
+$color-icon--darken: $gray;
+$color-icon--dark: #727272;
+$color-icon: #a5a5a5;
+$color-icon--light: #cacaca;
+$color-icon--hover: $gray--dark;
+
+//border
+$color-border--darkest: $gray--darkest;
+$color-border--darken: $gray--darken;
+$color-border--dark: $gray;
+$color-border: #a5a5a5;
+$color-border--light: #c2c2c2;
+$color-border--lighten: #dedede;
+$color-border--lightest: #dee3e7;
+
+$input-color-border: #c7c7c7;
+$input-color-text: #3263a6;
+$input-color-border--hover: #b3b3b3;
+$input-shadow--hover: 0 2px 4px 0 rgba(0, 0, 0, 0.05),
+    0 0 4px 0 rgba(0, 0, 0, 0.05);
+
+$color-placeholder: #999;
+
+$border-radius: 2px;
+
+//Shadow
+$bxs: 1px 1px 10px #ddd;
+$bxs-hover: 1px 1px 10px rgba($color-main, 0.6);
+$bxs-box: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.1);
+
+//Transition
+$trs-menu: all 0.5s cubic-bezier(0.25, 0.8, 0.4, 0.95);
+$trs: all 0.4s ease-in-out;
+
+//button colors
+$button-colors: (
+    default: $color-accent,
+    success: $color-success,
+    error: #f74969,
+    info: $color-info,
+    muted: $color-muted,
+);
+
+$text-colors: (
+    danger: red,
+);
+
+$bg-color: #000;
+
+$bg-colors: (
+    light: $color-bg--light,
+    lighten: $color-bg--lighten,
+    lightest: $color-bg--lightest,
+);
+
+//media max breakpoint
+$breakpoints: (
+    i5: 320px,
+    i7: 375px,
+    i8: 414px,
+    xs: 480px,
+    sm: 768px,
+    md: 1024px,
+    mdX: 1200px,
+    lg: 1366px,
+);
+
+//media min breakpoint
+$breakpointsMin: (
+    i5: 319px,
+    i7: 374px,
+    i8: 413px,
+    xs: 479px,
+    sm: 767px,
+    md: 1023px,
+    mdX: 1200px,
+    lg: 1365px,
+);
+
+//z-index
+$z-index: (
+    bottom: -9999,
+    down: -1,
+    default: 1,
+    fixed: 10,
+    success: 50,
+    successBtnClose: 51,
+    dropdown: 333,
+    overlay: 999,
+    popup: 1000,
+    modal: 1001,
+);
+
+//Modal Vars
+$modal-border-width: 1px;
+$modal-border-color: #e8e8e8;
+$modal-border-radius: $border-radius;
+
+$modal-box-shadow: 0 0.25rem 0.5rem rgba(#000, 0.5) !default;
+
+$modal-backdrop-bg: #000 !default;
+$modal-content-bg: #fff !default;
+$modal-backdrop-opacity: 0.4 !default;
+$modal-header-padding: 15px !default;
+$modal-inner-padding: 15px !default;
+
+$modal-lg: 800px !default;
+$modal-md: 500px !default;
+$modal-sm: 300px !default;
+
+$transition-collapse: height 0.35s ease !default;
+$transition-fade: opacity 0.15s linear !default;

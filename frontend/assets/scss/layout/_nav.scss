@@ -1,0 +1,132 @@
+.nav {
+    position: relative;
+    background: #070707;
+
+    @include md-block() {
+        display: none;
+        padding-top: 100px;
+    }
+
+    @include sm-block() {
+        display: none;
+        padding-top: 160px;
+    }
+
+    @include xs-block() {
+        display: none;
+        padding-top: 130px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        @include md-block() {
+            flex-direction: column;
+            padding-bottom: 30px;
+        }
+
+        li {
+            position: relative;
+
+            &:first-child a {
+                padding: 15px 15px 15px 0;
+
+                @include sm-block() {
+                    padding: 15px;
+                }
+            }
+
+            a {
+                display: block;
+                padding: 15px;
+                color: $color-accent;
+                font-family: $f-medium;
+            }
+        }
+    }
+} // .nav
+
+.mob-menu {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: none;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+
+    @include md-block() {
+        display: inline;
+    }
+
+    .hamburger__menu,
+    .hamburger__menu::after,
+    .hamburger__menu::before {
+        width: 24px;
+        height: 2px;
+        border-radius: 2px;
+    }
+
+    .hamburger__menu {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0ms 300ms;
+        background-color: $color-accent;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            background: $color-accent;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 0;
+            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            background: $color-accent;
+        }
+
+        &.animate {
+            background: rgba(255, 255, 255, 0);
+
+            &::after {
+                top: 0;
+                transform: rotate(45deg);
+                transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+
+            &::before {
+                bottom: 0;
+                transform: rotate(-45deg);
+                transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            }
+        }
+
+        &.hamburger__menu_white {
+            background-color: #fff;
+
+            &::before {
+                background: #fff;
+            }
+
+            &::after {
+                background: #fff;
+            }
+
+            &.animate {
+                background: rgba(255, 255, 255, 0);
+            }
+        }
+    }
+}

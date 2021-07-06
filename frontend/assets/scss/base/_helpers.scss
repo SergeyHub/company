@@ -1,0 +1,107 @@
+.is-hidden {
+    display: none !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.is-notvisible {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+[onclick] {
+    cursor: pointer;
+}
+
+._loading {
+    position: relative;
+    z-index: 10 !important;
+    opacity: 1 !important;
+    min-width: 30px;
+    overflow: hidden !important;
+    animation: none !important;
+
+    animation: loadingAnimation 2s ease infinite;
+    border: 0 !important;
+    border-radius: $border-radius !important;
+    background: linear-gradient(270deg, #ddd, #eee, #ddd) !important;
+    background-size: 400% 400% !important;
+    box-shadow: none !important;
+    pointer-events: none !important;
+    min-height: 24px;
+
+    &::after {
+        content: '' !important;
+        position: absolute !important;
+        top: -1px !important;
+        right: -1px !important;
+        bottom: -1px !important;
+        left: -1px !important;
+        z-index: 10 !important;
+        opacity: 1 !important;
+        display: block !important;
+        width: 103% !important;
+        height: 103% !important;
+        transform: none !important;
+        animation: loadingAnimation 2s ease infinite !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: linear-gradient(270deg, #ddd, #eee, #ddd) !important;
+        background-size: 400% 400% !important;
+    }
+
+    &:not([class*='img']):not([class*='avatar']):not([class*='slide']):not([class*='image']) {
+        height: 40px !important;
+    }
+
+    &[class*='slide'],
+    &[class*='image'] {
+        max-height: 500px !important;
+    }
+
+    &[class*='icon'],
+    &[class*='btn-icon'],
+    &[class*='user-nav__item'] {
+        &::after,
+        &::before {
+            display: none !important;
+        }
+
+        &:not([class^='text']):not([class*='bb-checkbox']):not([class*='btn']) {
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 50% !important;
+            fill: none !important;
+
+            @include xs-block() {
+                margin: auto;
+            }
+        }
+
+        path {
+            fill: none !important;
+        }
+
+        use {
+            display: none !important;
+        }
+    }
+
+    & > * {
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+}
+
+@keyframes loadingAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: -200% 50%;
+    }
+}

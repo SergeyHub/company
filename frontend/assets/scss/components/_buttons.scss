@@ -1,0 +1,320 @@
+.btn {
+    display: inline-block;
+    min-width: 130px;
+    padding: 15px 40px;
+    transition: $trs;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: $color-text--white;
+    font-family: $f-medium;
+    text-align: center;
+    cursor: pointer;
+    min-height: 50px;
+
+    @include lg-block() {
+        padding: 15px 20px;
+    }
+
+    @include xs-block() {
+        min-width: auto;
+        padding: 10px 15px;
+        background: rgba(255, 255, 255, 0.15);
+        font-size: 14px;
+        min-height: 40px;
+    }
+
+    &-accent {
+        background-color: $color-accent;
+        color: #2b2d33;
+
+        @include xs-block() {
+            background: $color-accent;
+        }
+        &:hover {
+          color: #2b2d33;
+        }
+    }
+
+    &-text {
+        display: inline-block;
+        min-width: auto;
+        padding: 0;
+        transition: $trs;
+        border-radius: 0;
+        background: transparent;
+        font-family: $f-medium;
+        text-align: center;
+        cursor: pointer;
+        min-height: 50px;
+
+        @include xs-block() {
+            min-width: auto;
+            padding: 10px 15px;
+            background: transparent;
+            font-size: 14px;
+            min-height: 40px;
+        }
+    }
+
+    &-header {
+        display: flex;
+
+        &-singup {
+            display: inline-block;
+            min-width: auto;
+            margin-right: 15px;
+            padding: 0;
+            transition: $trs;
+            border-radius: 0;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.2);
+            font-family: $f-medium;
+            text-align: center;
+            cursor: pointer;
+            min-height: auto;
+
+            @include xs-block() {
+                min-width: auto;
+                padding: 10px 15px;
+                background: transparent;
+                font-size: 14px;
+                min-height: 40px;
+            }
+        }
+
+        &-singin {
+            min-width: 90px;
+            padding: 15px 28px;
+            color: $color-accent;
+
+            &.color-accent {
+                color: $color-accent;
+            }
+        }
+    }
+
+    &-nofocus {
+        color: rgba(255, 255, 255, 0.3);
+
+        &.color-accent {
+            color: $color-accent;
+        }
+    }
+
+    &-one {
+        width: 100%;
+    }
+
+    &-border {
+        transition: $trs;
+        border: 1px solid $color-accent;
+        background-color: transparent;
+        color: $color-accent;
+
+        &:hover {
+            background-color: $color-accent;
+            color: #000;
+        }
+
+        &:hover svg {
+            transition: $trs;
+            stroke: #fff;
+            fill: #fff;
+        }
+
+        svg {
+            transition: $trs;
+        }
+    }
+
+    &-radius {
+        transition: $trs;
+        border-radius: 25px;
+    }
+
+    &-signup {
+        width: calc(100% - 150px);
+        color: $color-accent;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &-backpage {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        transition: $trs;
+        color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+
+        &:hover {
+            color: $color-accent;
+        }
+
+        ins {
+            margin-right: 15px;
+            text-decoration: none;
+        }
+    }
+
+    &-profile {
+        height: 40px;
+        padding: 6px 25px;
+    }
+
+    &-icon {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+
+            fill: #000;
+
+            @include i5-block() {
+                display: none;
+            }
+        }
+
+        span {
+            display: flex;
+        }
+    }
+
+    &-mess {
+        @include xs-block() {
+            width: calc(100% - 64px);
+            max-width: 100%;
+        }
+    }
+
+    &-favorite {
+        position: relative;
+        margin-left: 10px;
+        padding: 28px 32px;
+        border-radius: 12px;
+        border: none;
+        background: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+
+        @include xs-block() {
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 24px;
+            height: 24px;
+            transform: translate(-50%, -50%);
+            background-image: url('/files/icons/svg/icon--favorite.svg');
+            background-size: 24px 24px;
+        }
+
+        &.active::before {
+            background-image: url('/files/icons/svg/icon--favorite-active.svg');
+            background-size: 24px 24px;
+        }
+    }
+
+    &-reviews,
+    &-hide {
+        margin-right: 10px;
+        color: $color-accent;
+
+        svg {
+            fill: $color-accent;
+        }
+
+        span {
+            white-space: nowrap;
+        }
+    }
+
+    &-quote {
+        position: relative;
+        margin-right: 10px;
+        padding: 20px;
+        transition: $trs;
+        color: $color-accent;
+        cursor: pointer;
+
+        @include i5-block() {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: $color-text--white;
+        }
+
+        &.on::before {
+            content: '';
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            width: 0;
+            height: 0;
+            transform: translate(-50%, -50%);
+            border-width: 0 10px 20px;
+            border-style: solid;
+            border-color: transparent transparent $color-accent;
+        }
+    }
+
+    &-del {
+        margin-left: 10px;
+        color: $color-accent;
+
+        svg {
+            fill: $color-accent;
+        }
+    }
+
+    &-beef {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+        cursor: pointer;
+
+        @include i5-block() {
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        &:hover .icon,
+        &:hover span {
+            opacity: 1;
+        }
+
+        .icon {
+            opacity: 0.2;
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+            transition: $trs;
+            background-image: url('/files/icons/svg/icon--beef.svg');
+            background-size: cover;
+
+            @include xs-block() {
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        span {
+            opacity: 0.2;
+            transition: $trs;
+            color: $color-text--white;
+        }
+    }
+} //.btn

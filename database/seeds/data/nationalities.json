@@ -1,0 +1,492 @@
+[
+    {
+        "ENGTEXT": "Afghan",
+        "RUSTEXT": "афганец, афганка",
+        "TRANSCRIPT": "ˈæfˌgæn"
+    },
+    {
+        "ENGTEXT": "Albanian",
+        "RUSTEXT": "албанец, албанка",
+        "TRANSCRIPT": "ælˈbeɪniən"
+    },
+    {
+        "ENGTEXT": "Algerian",
+        "RUSTEXT": "алжирец, алжирка",
+        "TRANSCRIPT": "ælˈʤɪriən"
+    },
+    {
+        "ENGTEXT": "American",
+        "RUSTEXT": "американец, американка",
+        "TRANSCRIPT": "əˈmɛrəkən"
+    },
+    {
+        "ENGTEXT": "Angolan",
+        "RUSTEXT": "анголец, анголка",
+        "TRANSCRIPT": "ˈæŋgoʊlən"
+    },
+    {
+        "ENGTEXT": "Argentinian",
+        "RUSTEXT": "аргентинец, аргентинка",
+        "TRANSCRIPT": "ˌɑrʤənˈtɪniən"
+    },
+    {
+        "ENGTEXT": "Armenian",
+        "RUSTEXT": "армянин, армянка",
+        "TRANSCRIPT": "ɑrˈminiən"
+    },
+    {
+        "ENGTEXT": "Australian",
+        "RUSTEXT": "австралиец, австралийка",
+        "TRANSCRIPT": "ɔˈstreɪljən"
+    },
+    {
+        "ENGTEXT": "Austrian",
+        "RUSTEXT": "австриец, австрийка",
+        "TRANSCRIPT": "ˈɔstriən"
+    },
+    {
+        "ENGTEXT": "Azerbaijani",
+        "RUSTEXT": "азербайджанец, азербайджанка",
+        "TRANSCRIPT": "ˌɑzərbaɪˈʤɑni"
+    },
+    {
+        "ENGTEXT": "Bahamian",
+        "RUSTEXT": "житель(ница) Багамских островов",
+        "TRANSCRIPT": "bəˈheɪmiən"
+    },
+    {
+        "ENGTEXT": "Bangladeshi",
+        "RUSTEXT": "бангладешец, бангладешка",
+        "TRANSCRIPT": "ˈbæŋləˌdɛʃi"
+    },
+    {
+        "ENGTEXT": "Belarusian",
+        "RUSTEXT": "белорус, белоруска",
+        "TRANSCRIPT": "ˈbɛləˈrʌʃən"
+    },
+    {
+        "ENGTEXT": "Belgian",
+        "RUSTEXT": "бельгиец, бельгийка",
+        "TRANSCRIPT": "ˈbɛlʤən"
+    },
+    {
+        "ENGTEXT": "Bolivian",
+        "RUSTEXT": "боливиец, боливийка",
+        "TRANSCRIPT": "boʊˈlɪviən"
+    },
+    {
+        "ENGTEXT": "Bosnian",
+        "RUSTEXT": "босниец, боснийка",
+        "TRANSCRIPT": "ˈbɑzniən"
+    },
+    {
+        "ENGTEXT": "Brazilian",
+        "RUSTEXT": "бразилец, бразильянка",
+        "TRANSCRIPT": "brəˈzɪljən"
+    },
+    {
+        "ENGTEXT": "British",
+        "RUSTEXT": "британец, британка",
+        "TRANSCRIPT": "ˈbrɪtɪʃ"
+    },
+    {
+        "ENGTEXT": "Bulgarian",
+        "RUSTEXT": "болгарин, болгарка",
+        "TRANSCRIPT": "bəlˈgɛriən"
+    },
+    {
+        "ENGTEXT": "Canadian",
+        "RUSTEXT": "канадец, канадка",
+        "TRANSCRIPT": "kəˈneɪdiən"
+    },
+    {
+        "ENGTEXT": "Chilean",
+        "RUSTEXT": "чилиец, чилийка",
+        "TRANSCRIPT": "ˈʧɪliən"
+    },
+    {
+        "ENGTEXT": "Chinese",
+        "RUSTEXT": "китаец, китаянка",
+        "TRANSCRIPT": "ʧaɪˈniz"
+    },
+    {
+        "ENGTEXT": "Colombian",
+        "RUSTEXT": "колумбиец, колумбийка",
+        "TRANSCRIPT": "kəˈlʌmbiən"
+    },
+    {
+        "ENGTEXT": "Costa Rican",
+        "RUSTEXT": "житель(ница) Коста-Рики",
+        "TRANSCRIPT": "ˈkɔstə ˈrikən"
+    },
+    {
+        "ENGTEXT": "Croatian",
+        "RUSTEXT": "хорват, хорватка",
+        "TRANSCRIPT": "kroʊˈeɪʃən"
+    },
+    {
+        "ENGTEXT": "Cuban ",
+        "RUSTEXT": "кубинец, кубинка",
+        "TRANSCRIPT": "ˈkjubən"
+    },
+    {
+        "ENGTEXT": "Cypriot",
+        "RUSTEXT": "киприот, киприотка",
+        "TRANSCRIPT": "ˈsɪpriət"
+    },
+    {
+        "ENGTEXT": "Czech",
+        "RUSTEXT": "чех, чешка",
+        "TRANSCRIPT": "ʧɛk"
+    },
+    {
+        "ENGTEXT": "Dane",
+        "RUSTEXT": "датчанин, датчанка",
+        "TRANSCRIPT": "deɪn"
+    },
+    {
+        "ENGTEXT": "Dominican",
+        "RUSTEXT": "доминиканец, доминиканка",
+        "TRANSCRIPT": "dəˈmɪnəkən"
+    },
+    {
+        "ENGTEXT": "Dutchwoman",
+        "RUSTEXT": "голландка",
+        "TRANSCRIPT": "dʌʧˈwʊmən"
+    },
+    {
+        "ENGTEXT": "Ecuadorian",
+        "RUSTEXT": "житель(ница) Эквадора",
+        "TRANSCRIPT": "ˌɛkwəˈdɔriən"
+    },
+    {
+        "ENGTEXT": "Egyptian",
+        "RUSTEXT": "египтянин, египтянка",
+        "TRANSCRIPT": "ɪˈʤɪpʃən"
+    },
+    {
+        "ENGTEXT": "Estonian",
+        "RUSTEXT": "эстонец, эстонка",
+        "TRANSCRIPT": "ɛˈstoʊniən"
+    },
+    {
+        "ENGTEXT": "Fijian",
+        "RUSTEXT": "фиджиец, фиджийка",
+        "TRANSCRIPT": "ˈfiʤiən"
+    },
+    {
+        "ENGTEXT": "Filipino",
+        "RUSTEXT": "филиппинец, филиппинка",
+        "TRANSCRIPT": "ˌfɪləˈpinoʊ"
+    },
+    {
+        "ENGTEXT": "Finn",
+        "RUSTEXT": "финн, финка",
+        "TRANSCRIPT": "fɪn"
+    },
+    {
+        "ENGTEXT": "Frenchman",
+        "RUSTEXT": "француз",
+        "TRANSCRIPT": "ˈfrɛnʧmæn"
+    },
+    {
+        "ENGTEXT": "Frenchwoman",
+        "RUSTEXT": "француженка",
+        "TRANSCRIPT": "frɛnʧˈwʊmən"
+    },
+    {
+        "ENGTEXT": "Georgian",
+        "RUSTEXT": "грузин, грузинка",
+        "TRANSCRIPT": "ˈʤɔrʤən"
+    },
+    {
+        "ENGTEXT": "German",
+        "RUSTEXT": "немец, немка",
+        "TRANSCRIPT": "ˈʤɜrmən"
+    },
+    {
+        "ENGTEXT": "Greek",
+        "RUSTEXT": "грек, гречанка",
+        "TRANSCRIPT": "grik"
+    },
+    {
+        "ENGTEXT": "Guatemalan",
+        "RUSTEXT": "гватемалец, гватемалка",
+        "TRANSCRIPT": "ˌgwɑtəˈmɑlən"
+    },
+    {
+        "ENGTEXT": "Hungarian",
+        "RUSTEXT": "венгр, венгерка",
+        "TRANSCRIPT": "həŋˈgɛriən"
+    },
+    {
+        "ENGTEXT": "Icelander",
+        "RUSTEXT": "исландец, исландка",
+        "TRANSCRIPT": "ˈaɪsləndər"
+    },
+    {
+        "ENGTEXT": "Indian",
+        "RUSTEXT": "индиец, индианка",
+        "TRANSCRIPT": "ˈɪndiən"
+    },
+    {
+        "ENGTEXT": "Indonesian",
+        "RUSTEXT": "индонезиец, индонезийка",
+        "TRANSCRIPT": "ˌɪndoʊˈniʒən"
+    },
+    {
+        "ENGTEXT": "Iranian",
+        "RUSTEXT": "иранец, иранка",
+        "TRANSCRIPT": "ɪˈrɑniən"
+    },
+    {
+        "ENGTEXT": "Iraqi",
+        "RUSTEXT": "житель(ница) Ирака",
+        "TRANSCRIPT": "ɪˈræki"
+    },
+    {
+        "ENGTEXT": "Irishman",
+        "RUSTEXT": "ирландец",
+        "TRANSCRIPT": "ˈaɪrɪʃmən"
+    },
+    {
+        "ENGTEXT": "Irishwoman",
+        "RUSTEXT": "ирландка",
+        "TRANSCRIPT": "ˈaɪrɪʃˈwʊmən"
+    },
+    {
+        "ENGTEXT": "Israeli",
+        "RUSTEXT": "израильтянин, израильтянка",
+        "TRANSCRIPT": "ɪˈzreɪli"
+    },
+    {
+        "ENGTEXT": "Italian",
+        "RUSTEXT": "итальянец, итальянка",
+        "TRANSCRIPT": "ɪˈtæljən"
+    },
+    {
+        "ENGTEXT": "Jamaican",
+        "RUSTEXT": "житель(ница) острова Ямайка",
+        "TRANSCRIPT": "ʤəˈmeɪkən"
+    },
+    {
+        "ENGTEXT": "Japanese",
+        "RUSTEXT": "японец, японка",
+        "TRANSCRIPT": "ˌʤæpəˈniz"
+    },
+    {
+        "ENGTEXT": "Kazakh",
+        "RUSTEXT": "казах, казашка",
+        "TRANSCRIPT": "ˈkæzæk"
+    },
+    {
+        "ENGTEXT": "Kenyan",
+        "RUSTEXT": "кениец, кенийка",
+        "TRANSCRIPT": "ˈkɛnjən"
+    },
+    {
+        "ENGTEXT": "Latvian",
+        "RUSTEXT": "латыш, латышка",
+        "TRANSCRIPT": "ˈlætviən"
+    },
+    {
+        "ENGTEXT": "Liberian",
+        "RUSTEXT": "либериец, либерийка",
+        "TRANSCRIPT": "laɪˈbɪriən"
+    },
+    {
+        "ENGTEXT": "Libyan",
+        "RUSTEXT": "ливиец, ливийка",
+        "TRANSCRIPT": "ˈlɪbiən"
+    },
+    {
+        "ENGTEXT": "Lithuanian",
+        "RUSTEXT": "литовец, литовка",
+        "TRANSCRIPT": "ˌlɪθəˈweɪniən"
+    },
+    {
+        "ENGTEXT": "Luxembourger",
+        "RUSTEXT": "люксембуржец, житель Люксембурга",
+        "TRANSCRIPT": "ˈlʌksəmˌbɔrgər"
+    },
+    {
+        "ENGTEXT": "Macedonian",
+        "RUSTEXT": "македонец, македонка",
+        "TRANSCRIPT": "ˌmæsəˈdoʊnjən"
+    },
+    {
+        "ENGTEXT": "Malay",
+        "RUSTEXT": "малаец, малайка",
+        "TRANSCRIPT": "ˈmeɪleɪ"
+    },
+    {
+        "ENGTEXT": "Maltese",
+        "RUSTEXT": "мальтиец, мальтийка",
+        "TRANSCRIPT": "mɔlˈtiz"
+    },
+    {
+        "ENGTEXT": "Mexican",
+        "RUSTEXT": "мексиканец, мексиканка",
+        "TRANSCRIPT": "ˈmɛksəkən"
+    },
+    {
+        "ENGTEXT": "Mongolian",
+        "RUSTEXT": "монгол, монголка",
+        "TRANSCRIPT": "mɑŋˈgoʊliən"
+    },
+    {
+        "ENGTEXT": "Moroccan",
+        "RUSTEXT": "житель(ница) Марокко",
+        "TRANSCRIPT": "məˈrɑkən"
+    },
+    {
+        "ENGTEXT": "New Zealander",
+        "RUSTEXT": "житель(ница) Новой Зеландии",
+        "TRANSCRIPT": "nu ˈziləndər"
+    },
+    {
+        "ENGTEXT": "Norwegian",
+        "RUSTEXT": "норвежец, норвежка",
+        "TRANSCRIPT": "ˌnɔrˈwiʤən"
+    },
+    {
+        "ENGTEXT": "Pakistani",
+        "RUSTEXT": "пакистанец, пакистанка",
+        "TRANSCRIPT": "ˌpækɪˈstæni"
+    },
+    {
+        "ENGTEXT": "Panamanian",
+        "RUSTEXT": "житель(ница) Панамы",
+        "TRANSCRIPT": "ˌpænəˈmeɪniən"
+    },
+    {
+        "ENGTEXT": "Pole",
+        "RUSTEXT": "поляк, полька",
+        "TRANSCRIPT": "poʊl"
+    },
+    {
+        "ENGTEXT": "Portuguese",
+        "RUSTEXT": "португалец, португалка",
+        "TRANSCRIPT": "ˈpɔrʧəˌgiz"
+    },
+    {
+        "ENGTEXT": "Romanian",
+        "RUSTEXT": "румын, румынка",
+        "TRANSCRIPT": "roʊˈmeɪniən"
+    },
+    {
+        "ENGTEXT": "Russian",
+        "RUSTEXT": "русский, русская",
+        "TRANSCRIPT": "ˈrʌʃən"
+    },
+    {
+        "ENGTEXT": "Serbian",
+        "RUSTEXT": "серб, сербка",
+        "TRANSCRIPT": "ˈsɜrbiən"
+    },
+    {
+        "ENGTEXT": "Singaporean",
+        "RUSTEXT": "сингапурец, сингапурка",
+        "TRANSCRIPT": "sɪŋgəˈpɔriən"
+    },
+    {
+        "ENGTEXT": "Slovak",
+        "RUSTEXT": "словак, словачка",
+        "TRANSCRIPT": "ˈsloʊvæk"
+    },
+    {
+        "ENGTEXT": "Slovene",
+        "RUSTEXT": "словенец, словенка",
+        "TRANSCRIPT": "ˌsloʊˈvin"
+    },
+    {
+        "ENGTEXT": "South African",
+        "RUSTEXT": "житель(ница) ЮАР",
+        "TRANSCRIPT": "saʊθ ˈæfrəkən"
+    },
+    {
+        "ENGTEXT": "South Korean",
+        "RUSTEXT": "житель(ница) Южной Кореи",
+        "TRANSCRIPT": "saʊθ kɔˈriən"
+    },
+    {
+        "ENGTEXT": "Spaniard",
+        "RUSTEXT": "испанец, испанка",
+        "TRANSCRIPT": "ˈspænjərd"
+    },
+    {
+        "ENGTEXT": "Swede",
+        "RUSTEXT": "швед, шведка",
+        "TRANSCRIPT": "swid"
+    },
+    {
+        "ENGTEXT": "Swiss",
+        "RUSTEXT": "швейцарец, швейцарка",
+        "TRANSCRIPT": "swɪs"
+    },
+    {
+        "ENGTEXT": "Syrian",
+        "RUSTEXT": "сириец, сирийка",
+        "TRANSCRIPT": "ˈsɪriən"
+    },
+    {
+        "ENGTEXT": "Tajik",
+        "RUSTEXT": "таджик, таджичка",
+        "TRANSCRIPT": "ˈtɑʤɪk"
+    },
+    {
+        "ENGTEXT": "Thai",
+        "RUSTEXT": "таец, тайка",
+        "TRANSCRIPT": "taɪ"
+    },
+    {
+        "ENGTEXT": "Tunisian",
+        "RUSTEXT": "тунисец, туниска",
+        "TRANSCRIPT": "ˌtuˈniʒən"
+    },
+    {
+        "ENGTEXT": "Turk",
+        "RUSTEXT": "турок, турчанка",
+        "TRANSCRIPT": "tɜrk"
+    },
+    {
+        "ENGTEXT": "Turkmwomen",
+        "RUSTEXT": "туркменка",
+        "TRANSCRIPT": "ˈtɜrkˌmɛn"
+    },
+    {
+        "ENGTEXT": "Ukrainian",
+        "RUSTEXT": "украинец, украинка",
+        "TRANSCRIPT": "juˈkreɪniən"
+    },
+    {
+        "ENGTEXT": "Uruguayan",
+        "RUSTEXT": "уругваец, уругвайка",
+        "TRANSCRIPT": "ˌjɜrəˈgweɪən"
+    },
+    {
+        "ENGTEXT": "Uzbek",
+        "RUSTEXT": "узбек, узбечка",
+        "TRANSCRIPT": "ˈuzbɛk"
+    },
+    {
+        "ENGTEXT": "Venezuelan",
+        "RUSTEXT": "венесуэлец, венесуэлка",
+        "TRANSCRIPT": "ˌvɛnɪˈzweɪlən"
+    },
+    {
+        "ENGTEXT": "Vietnamese",
+        "RUSTEXT": "вьетнамец, вьетнамка",
+        "TRANSCRIPT": "viɛtnɑˈmis"
+    },
+    {
+        "ENGTEXT": "Welshwoman",
+        "RUSTEXT": "уроженка Уэльса, валлийка",
+        "TRANSCRIPT": "wɛlʧˈwʊmən"
+    },
+    {
+        "ENGTEXT": "Yemenite",
+        "RUSTEXT": "йеменец, йеменка",
+        "TRANSCRIPT": "ˈjɛmənit"
+    }
+]

@@ -1,0 +1,172 @@
+.country {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    height: 100vh;
+    padding: 50px;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.98);
+
+    @include sm-block() {
+        padding: 20px;
+    }
+
+    &__close {
+        position: fixed;
+        top: 1px;
+        right: 1px;
+        z-index: 999;
+        width: 80px;
+        height: 80px;
+        transition: all 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.3);
+        background-image: url('/files/icons/svg/icon--close.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 24px 24px;
+        cursor: pointer;
+
+        @include xs-block() {
+            width: 52px;
+            height: 52px;
+            background-color: #15171a;
+            background-size: 16px 16px;
+        }
+
+        &:hover {
+            background-color: #0d0e10;
+        }
+    }
+
+    &__search {
+        padding: 0 20px;
+
+        @include sm-block() {
+            margin-top: 65px;
+            padding: 0px;
+        }
+
+        &-title {
+            margin-bottom: 15px;
+            color: $color-text--white;
+            font-family: $f-bold;
+            font-size: 18px;
+
+            .edit-country {
+                margin-left: 15px;
+                padding: 5px 10px;
+                border: 1px solid $color-accent;
+                color: $color-accent;
+                font-family: $f;
+                font-size: 14px;
+                cursor: pointer;
+
+                @include sm-block() {
+                    position: absolute;
+                    top: 25px;
+                    left: 15px;
+                    margin-left: 0px;
+                }
+
+                @include xs-block() {
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            background: hsla(0, 0%, 76.9%, 0.2);
+            color: $color-text--white;
+        }
+
+        &-result {
+            margin-top: 30px;
+
+            &-row {
+                display: flex;
+
+                @include sm-block() {
+                    flex-direction: column;
+                }
+            }
+
+            &-col {
+                width: 33.333333%;
+                padding: 0 20px;
+                border-right: 1px solid rgba(255, 255, 255, 0.3);
+
+                @include sm-block() {
+                    width: 100%;
+                    padding: 0px;
+                    border-right: none;
+                }
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        transform: $trs;
+
+        @include sm-block() {
+            padding: 10px 0px;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: $color-accent;
+        }
+
+        &-title {
+            display: flex;
+            align-items: center;
+        }
+
+        &-count {
+            margin-left: 15px;
+            color: $color-text--white;
+            font-family: $f-bold;
+
+            &::before {
+                content: '(';
+                opacity: 0.4;
+            }
+
+            &::after {
+                content: ')';
+                opacity: 0.4;
+            }
+        }
+
+        &-flag img {
+            width: 32px;
+            height: auto;
+        }
+
+        &-name {
+            margin-left: 15px;
+            transform: $trs;
+            color: $color-text--white;
+            font-family: $f-medium;
+        }
+    }
+} // .country
+
+#city .country__item-name {
+    margin-left: 0;
+}

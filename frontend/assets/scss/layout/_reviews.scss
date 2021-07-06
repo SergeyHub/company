@@ -1,0 +1,158 @@
+.reviews {
+    position: relative;
+
+    &__row {
+        position: relative;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        &:last-child {
+            padding-bottom: 0px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+        }
+
+        &-avatar {
+            width: 80px;
+            text-align: center;
+
+            @include xs-block() {
+                width: 48px;
+            }
+
+            &-title {
+                margin-top: 10px;
+                font-size: 18px;
+
+                @include xs-block() {
+                    font-size: 12px;
+                }
+            }
+
+            img {
+                display: block;
+                width: 80px;
+                height: 80px;
+                border-radius: calc(80px - 50%);
+
+                @include xs-block() {
+                    width: 48px;
+                    height: auto;
+                }
+            }
+        }
+
+        &-desc {
+            width: calc(100% - 80px);
+            padding-left: 30px;
+
+            @include xs-block() {
+                width: calc(100% - 48px);
+                padding-left: 20px;
+            }
+        }
+
+        &-meta {
+            display: flex;
+            align-items: center;
+
+            &-avatar {
+                width: 34px;
+                height: 34px;
+                margin-right: 10px;
+                overflow: hidden;
+                border-radius: 17px;
+            }
+
+            &-name {
+                margin-right: 10px;
+                color: rgba($color-text--white, 0.8);
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+            }
+
+            &-year {
+                margin-right: 15px;
+                color: rgba($color-text--white, 0.5);
+                font-size: 14px;
+                line-height: 17px;
+                @include xs-block() {
+                    display: none;
+                }
+            }
+
+            &-city {
+                margin-right: 15px;
+                color: rgba($color-text--white, 0.5);
+                font-size: 14px;
+                line-height: 17px;
+                @include xs-block() {
+                    display: none;
+                }
+            }
+
+            &-data {
+                color: rgba($color-text--white, 0.5);
+                font-size: 14px;
+                line-height: 17px;
+                @include i5-block() {
+                    font-size: 13px;
+                }
+            }
+
+            &-profile {
+                color: rgba($color-text--white, 0.3);
+                @include xs-block() {
+                    display: none;
+                }
+            }
+
+            &-stars {
+                margin-left: 15px;
+
+                ul {
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        width: 20px;
+                        height: 16px;
+                        padding-left: 4px;
+                        background-image: url('/files/icons/svg/icon--stars-gray.svg');
+                        background-repeat: no-repeat;
+                        background-position: left;
+                        background-size: 16px 16px;
+
+                        &.on {
+                            background-image: url('/files/icons/svg/icon--stars.svg');
+                        }
+                    }
+                }
+            }
+
+            & + .reviews__item-meta {
+                margin-top: 10px;
+            }
+        }
+
+        &-content {
+            margin-top: 15px;
+            line-height: 150%;
+
+            @include xs-block() {
+                font-size: 14px;
+            }
+
+            &-wrap {
+                display: flex;
+                // flex-direction: row-reverse;
+            }
+        }
+    }
+}
