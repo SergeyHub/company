@@ -3,7 +3,7 @@
 2. Clone repository
 ```
 git clone github.com/SergeyHub/company.git
-cd zhigalo
+cd company
 ```
 
 3. Configure .env file
